@@ -2,7 +2,6 @@
     function registerUser() {
         var Nom = document.getElementById('Nom').value;
         var Prenom = document.getElementById('Prenom').value;
-        var email = document.getElementById('email').value;
         var Mdps = document.getElementById('Mdps').value;
      
         if (Nom == '' || Prenom == '') {
@@ -29,7 +28,7 @@
 
         // Perform a query
 
-        $query = 'INSERT INTO `adherent`( `MPasse`, `Nom`, `Prenom`, `Email`) VALUES ("' + Mdps + '", "' + Nom + '", "' + Prenom + '", "' + email + '");';
+        $query = 'INSERT INTO `bibliothecaire`(`MPasse`, `Nom`, `Prenom`) VALUES  ("' + Mdps + '", "' + Nom + '", "' + Prenom + '");';
 
         db.query($query, function (err, rows, fields) {
             if (err) {
@@ -47,8 +46,8 @@
         });
 
         // display notification
-        displayNotification('Do', 'New user registered successfully');
-        window.location.href = "page1.html";
+        displayNotification('Done!', 'New user registered successfully');
+        window.location.href = "index.html";
     }
 
     function displayNotification(titleValue, notificationValue) {

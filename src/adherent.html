@@ -1,0 +1,77 @@
+
+<!------ Include the above in your HEAD tag ---------->
+
+<!--
+
+Copy this code in your html file.
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PHP Form</title>
+    <link rel="stylesheet" href="../node_modules/bootswatch/dist/solar/bootstrap.min.css"></link>
+    
+    <script type="text/javascript" src="../node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script type="text/javascript" src="../node_modules/jquery/dist/jquery.min.js"></script>
+
+    
+ 
+    <script type="text/javascript" src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+ <style>
+   .ara{
+     margin-left:270px;
+     margin-right: 220px;
+   }
+   label{
+     color: white;
+   }
+   .ar{
+     margin-top: 50px;
+     text-align: center;
+     color: white;
+     margin-left: 300px;
+     font-size: 30px;
+   }
+   button{
+     text-align: center;
+     margin-left: 390px;
+
+   }
+ </style>
+ 
+  </head>
+
+<body>
+  <div class="ara">
+    <label class="ar">Formulaire adherent</label>
+    <fieldset>
+      <div class="form-group">
+        <label for="exampleInputEmail1" class="form-label mt-4">Nom : </label>
+        <input type="text" class="form-control" id="Nom" aria-describedby="emailHelp" placeholder="Enter Votre Nom">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1" class="form-label mt-4">Prenom : </label>
+        <input type="text" class="form-control" id="Prenom" aria-describedby="emailHelp" placeholder="Enter Votre Prenom">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1" class="form-label mt-4">Email address : </label>
+        <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter Votre Email">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1" class="form-label mt-4">Mot de passe : </label>
+        <input type="password" class="form-control" id="Mdps" placeholder="Mode de passe">
+      </div>
+     
+      <button type="button" class="btn btn-primary" onclick="registerUser()" >Enregister</button>
+    </fieldset>
+  </div>
+    
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="add.js"></script>
+
+  </body>
+
+</html>
