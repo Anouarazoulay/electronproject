@@ -81,32 +81,31 @@ Copy this code in your html file.
         </li>
       </ul>
 
-         
-
-      <div style="float: right;">
-        <form method="GET" class="form-inline my-2 my-lg-0" id="form_search">
-          <input class="form-control mr-sm-2" type="text" id="SearchWord" name="SearchWord" placeholder="Ex: Les Misèrables">
-          <script src="renderFile.js"></script>
-          <button class="btn btn-secondary my-2 my-sm-0" type="submit" id="btnSearch">Chercher</button>
-          <button class="btn btn-warning my-2 my-sm-0" style="margin-left: 5px;" onclick="tout()">Tout</button>
-        </form>
-      </div>
+        
     <!-- </div> -->
 </nav>
   <div class="ara">
     <label class="ar">Formulaire bibliothecaire</label>
     <fieldset>
       <div class="form-group">
-        <label for="exampleInputEmail1" class="form-label mt-4">Nom : </label>
-        <input type="text" class="form-control" id="Nom" aria-describedby="emailHelp" placeholder="Enter Votre Nom">
+        <label for="exampleInputEmail1" class="form-label mt-4">Numéro de l'exemplaire : </label>
+        <input type="text" class="form-control" id="NumEx" aria-describedby="emailHelp" required>
       </div>
       <div class="form-group">
-        <label for="exampleInputEmail1" class="form-label mt-4">Prenom : </label>
-        <input type="text" class="form-control" id="Prenom" aria-describedby="emailHelp" placeholder="Enter Votre Prenom">
+        <label for="exampleInputEmail1" class="form-label mt-4">numéro d'adhérent  : </label>
+        <input type="text" class="form-control" id="NumAd" aria-describedby="emailHelp" required>
       </div>
       <div class="form-group">
-        <label for="exampleInputPassword1" class="form-label mt-4">Mot de passe : </label>
-        <input type="password" class="form-control" id="Mdps" placeholder="Mode de passe">
+        <label for="exampleInputPassword1" class="form-label mt-4">Date d'emprunt: </label>
+        <input type="date" class="form-control" id="DateEmp" required>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1" class="form-label mt-4">Date précisé : </label>
+        <input type="date" class="form-control" id="DatePre" required>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1" class="form-label mt-4">Date retour: </label>
+        <input type="date" class="form-control" id="DateRe" required>
       </div>
      
       <button type="button" class="btn btn-primary" onclick="registerUser()" >Enregister</button>
@@ -114,7 +113,7 @@ Copy this code in your html file.
   </div>
     
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="add-biblio.js"></script>
+    <script src="add-Emprunt.js"></script>
 
   </body>
 

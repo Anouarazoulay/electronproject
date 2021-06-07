@@ -5,8 +5,8 @@
         var email = document.getElementById('email').value;
         var Mdps = document.getElementById('Mdps').value;
      
-        if (Nom == '' || Prenom == '') {
-            displayNotification('Error!', 'Values cannot be empty');
+        if (Nom == '' || Prenom == '' || email == '' || Mdps == '') {
+            displayNotification('Erreur!', 'Les valeurs ne peuvent pas être vides');
             return
         }
 
@@ -47,7 +47,8 @@
         });
 
         // display notification
-        displayNotification('Do', 'New user registered successfully');
+        
+        displayNotification('Succès', 'Nouvel adherent enregistré avec succès');
         window.location.href = "page1.html";
     }
 

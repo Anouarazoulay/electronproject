@@ -4,8 +4,8 @@
         var Prenom = document.getElementById('Prenom').value;
         var Mdps = document.getElementById('Mdps').value;
      
-        if (Nom == '' || Prenom == '') {
-            displayNotification('Error!', 'Values cannot be empty');
+        if (Nom == '' || Prenom == '' || Mdps == '') {
+            displayNotification('Erreur!', 'Les valeurs ne peuvent pas être vides');
             return
         }
 
@@ -46,7 +46,7 @@
         });
 
         // display notification
-        displayNotification('Done!', 'New user registered successfully');
+        displayNotification('Succès', 'Nouvel bibliothecaire enregistré avec succès');
         window.location.href = "index.html";
     }
 
