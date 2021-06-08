@@ -1,0 +1,118 @@
+
+<!------ Include the above in your HEAD tag ---------->
+
+<!--
+
+Copy this code in your html file.
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formumaire Adhérent</title>
+    <link rel="stylesheet" href="../node_modules/bootswatch/dist/solar/bootstrap.min.css"></link>
+    
+    <script type="text/javascript" src="../node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script type="text/javascript" src="../node_modules/jquery/dist/jquery.min.js"></script>
+
+    
+ 
+    <script type="text/javascript" src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+ <style>
+   .ara{
+     margin-left:270px;
+     margin-right: 220px;
+   }
+   label{
+     color: white;
+   }
+   .ar{
+     margin-top: 50px;
+     text-align: center;
+     color: white;
+     margin-left: 300px;
+     font-size: 30px;
+   }
+   button{
+     text-align: center;
+     margin-left: 390px;
+
+   }
+ </style>
+ 
+  </head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarColor01">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Livres
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Emprunts</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="">Adhérents</a>
+        </li>
+        <!--<li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li> -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Menu</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="livre.html">Nouveau Livre</a>
+            <a class="dropdown-item" href="exemplair.html">Nouvel Exemplaire</a>
+            <a class="dropdown-item" href="emprint.html">Nouvel Emprunt</a>
+            <a class="dropdown-item" href="adherent.html">Nouvel Adhérent</a>
+            <!-- <a class="dropdown-item" href="#">Something else here</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Separated link</a> -->
+          </div>
+        </li>
+      </ul>
+
+         
+
+  
+    <!-- </div> -->
+</nav>
+  <div class="ara">
+    <label class="ar">Formulaire Adhérent</label>
+    <fieldset>
+      <div class="form-group">
+        <label for="exampleInputEmail1" class="form-label mt-4">Nom : </label>
+        <input type="text" class="form-control" id="Nom" aria-describedby="emailHelp" placeholder="Entrer Votre Nom">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1" class="form-label mt-4">Prénom : </label>
+        <input type="text" class="form-control" id="Prenom" aria-describedby="emailHelp" placeholder="Entrer Votre Prénom">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1" class="form-label mt-4">Email : </label>
+        <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Entrer Votre Email">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1" class="form-label mt-4">Numéro apogée  : </label>
+        <input type="text" class="form-control" id="Mdps" placeholder="Entrer Votre Numéro apogée">
+      </div>
+     
+      <button type="button" class="btn btn-primary" onclick="registerUser()" >Enregistrer</button>
+    </fieldset>
+  </div>
+    
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="add.js"></script>
+
+  </body>
+
+</html>
