@@ -77,7 +77,7 @@
             console.log("Query successfully executed");
         });
 
-        $query = 'INSERT INTO `exemplaire`(`Etat`, `LivreID`) VALUES ("pble",(select max(IDLivre) from livre));';
+        $query = 'INSERT INTO `exemplaire`(`Etat`, `LivreID`) VALUES ("Disponible",(select max(IDLivre) from livre));';
 
         do {
 
